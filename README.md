@@ -4,8 +4,8 @@ A full-stack student management application featuring a Login screen and full
 **Create / Read / Update / Delete** operations for student records, protected by a
 **two-level AES encryption** scheme: data is encrypted in the browser, encrypted a
 second time on the server, and stored double-encrypted in MongoDB.
-[Live Preview](https://student-mgmt-three.vercel.app/login)
 ---
+[Live Preview](https://student-mgmt-three.vercel.app)
 
 ## Table of contents
 
