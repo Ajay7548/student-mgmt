@@ -316,6 +316,6 @@ the design choices are clear:
 > Add screenshots of the Login page and the Dashboard here (optional).
 >
 > ```
-> docs/login.png
+> docs/adminLogin.png
 > docs/dashboard.png
 > ```
