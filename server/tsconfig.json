@@ -1,0 +1,21 @@
+{
+  // TypeScript compiler configuration for the backend.
+  // These options tell `tsc` how to type-check and compile our `.ts` files into
+  // plain JavaScript that Node.js can run.
+  "compilerOptions": {
+    "target": "ES2022",                 // Compile down to modern JS supported by Node 18+.
+    "module": "NodeNext",               // Use Node's native module resolution (ESM/CJS interop).
+    "moduleResolution": "NodeNext",     // Match the module setting above.
+    "outDir": "./dist",                 // Compiled JS is written here (`npm run build`).
+    "rootDir": "./src",                 // All source TypeScript lives in `src/`.
+    "esModuleInterop": true,            // Allows `import express from "express"` style imports.
+    "forceConsistentCasingInFileNames": true, // Avoids cross-OS file-path bugs.
+    "strict": true,                     // Turn on ALL strict type-checking rules (best practice).
+    "skipLibCheck": true,               // Skip type-checking of dependency .d.ts files (faster builds).
+    "resolveJsonModule": true,          // Lets us `import` .json files if needed.
+    "sourceMap": true,                  // Generate source maps for easier debugging.
+    "declaration": false                // We don't ship type declarations for an app (only libraries do).
+  },
+  "include": ["src/**/*.ts"],           // Compile everything inside `src/`.
+  "exclude": ["node_modules", "dist"]   // Never compile dependencies or previous build output.
+}

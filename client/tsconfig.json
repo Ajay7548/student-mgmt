@@ -1,0 +1,22 @@
+{
+  // TypeScript configuration for the React frontend.
+  "compilerOptions": {
+    "target": "ES2020",                       // Modern JS output for current browsers.
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Type definitions for browser + JS APIs.
+    "module": "ESNext",                       // Use ES module syntax (import/export).
+    "moduleResolution": "bundler",            // Resolution mode designed for bundlers like Vite.
+    "jsx": "react-jsx",                        // Enable the modern JSX transform (no need to import React).
+    "strict": true,                            // Enable all strict type-checking options.
+    "noUnusedLocals": true,                    // Error on unused variables (keeps code tidy).
+    "noUnusedParameters": true,                // Error on unused function parameters.
+    "noFallthroughCasesInSwitch": true,        // Catch accidental missing `break` in switches.
+    "esModuleInterop": true,                   // Smooth interop with CommonJS packages.
+    "skipLibCheck": true,                      // Skip type-checking dependency declaration files.
+    "isolatedModules": true,                   // Each file can be transpiled on its own (Vite needs this).
+    "resolveJsonModule": true,                 // Allow importing .json files.
+    "noEmit": true                             // Vite does the actual compiling; tsc only type-checks.
+  },
+  // Type-check the app source AND the Vite config file.
+  "include": ["src", "vite.config.ts"]
+}
